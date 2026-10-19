@@ -1,0 +1,254 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Growth Clarity Session | AdComp Digital Studio</title>
+<meta name="description" content="A 20-minute screen-share on why your D2C ad growth stalled and what it is costing you.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@500;600;700;800&display=swap" rel="stylesheet">
+<style>
+:root{
+  --accent:#4F46E5;
+  --accent-soft:#EEEDFD;
+  --bg:#F8F8FB;
+  --ink:#111118;
+  --muted:#5B5B6B;
+  --body:#4B4B5A;
+  --line:#E3E3EC;
+  --line-soft:#ECECF3;
+  --good:#0F766E;
+}
+*{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%}
+body{margin:0;background:var(--bg);color:var(--ink);font-family:'Plus Jakarta Sans',system-ui,-apple-system,'Segoe UI',sans-serif;padding-bottom:84px}
+a{color:inherit;text-decoration:none}
+.wrap{max-width:460px;margin:0 auto;padding:0 20px 40px}
+.brand{padding-top:20px;text-align:center;font-size:15px;font-weight:800;letter-spacing:-.01em}
+.brand span{font-weight:600;color:var(--muted)}
+.hero{padding-top:32px;text-align:center;display:flex;flex-direction:column;gap:14px}
+.eyebrow{font-size:12px;font-weight:700;letter-spacing:.14em;color:var(--accent)}
+h1{margin:0;font-size:34px;line-height:1.1;font-weight:800;letter-spacing:-.02em}
+.sub{margin:0;font-size:17px;line-height:1.5;color:var(--body)}
+.sub strong{color:var(--ink)}
+.video{margin-top:24px;position:relative;width:100%;aspect-ratio:3/2;border-radius:16px;overflow:hidden;background:#fff;border:1px solid var(--line);box-shadow:0 14px 30px -16px rgba(40,30,120,.4)}
+.video iframe,.video video{position:absolute;inset:0;width:100%;height:100%;border:0}
+.slide-title{padding:18px 18px 0;font-size:15px;font-weight:700}
+.rows{margin:12px 18px 0;display:flex;flex-direction:column;gap:8px}
+.row{display:flex;gap:8px}
+.row i{display:block;height:10px;border-radius:5px;background:#E7E7EF}
+.row.head i{background:#CFCFE0}
+.row i:nth-child(1){flex:3}.row i:nth-child(2){flex:2}.row i:nth-child(3){flex:2}.row i:nth-child(4){flex:1}
+.play{position:absolute;left:50%;top:50%;width:68px;height:68px;margin:-34px 0 0 -34px;border-radius:50%;background:var(--accent);display:flex;align-items:center;justify-content:center;box-shadow:0 8px 20px -6px rgba(79,70,229,.6)}
+.chip{position:absolute;left:14px;bottom:14px;padding:5px 10px;border-radius:999px;background:rgba(17,17,24,.82);color:#fff;font-size:12px;font-weight:600}
+.cta-block{margin-top:20px;display:flex;flex-direction:column;align-items:center;gap:10px}
+.cta-block.last{margin-top:28px}
+.btn{display:flex;align-items:center;justify-content:center;gap:10px;width:100%;min-height:60px;border-radius:999px;background:var(--accent);color:#fff;font-size:19px;font-weight:800;box-shadow:0 12px 24px -12px rgba(79,70,229,.7);transition:transform .15s ease}
+.btn:hover{transform:translateY(-1px)}
+.btn:focus-visible{outline:3px solid var(--ink);outline-offset:3px}
+.note{font-size:13.5px;color:var(--muted);text-align:center}
+section{margin-top:48px;display:flex;flex-direction:column;gap:14px}
+h2{margin:0;font-size:24px;line-height:1.2;font-weight:800;letter-spacing:-.015em}
+.card{background:#fff;border:1px solid var(--line);border-radius:16px}
+.gets{padding:4px 16px;display:flex;flex-direction:column}
+.get{display:flex;gap:14px;padding:16px 0;border-bottom:1px solid var(--line-soft)}
+.get:last-child{border-bottom:0}
+.ico{flex:none;width:40px;height:40px;border-radius:12px;background:var(--accent-soft);color:var(--accent);display:flex;align-items:center;justify-content:center}
+.get b{display:block;font-size:16px;font-weight:700;margin-bottom:3px}
+.get p{margin:0;font-size:14px;line-height:1.45;color:var(--muted)}
+.steps{display:flex;flex-direction:column;gap:16px}
+.step{display:flex;gap:14px;align-items:flex-start}
+.num{flex:none;width:30px;height:30px;border-radius:50%;background:var(--accent);color:#fff;font-size:14px;font-weight:800;display:flex;align-items:center;justify-content:center}
+.step div{padding-top:3px}
+.step b{display:block;font-size:16px;font-weight:700;margin-bottom:2px}
+.step p{margin:0;font-size:14px;line-height:1.45;color:var(--muted)}
+.fit{padding:18px 16px;display:flex;flex-direction:column;gap:18px}
+.fit h3{margin:0 0 10px;font-size:12px;font-weight:700;letter-spacing:.12em}
+.fit h3.yes{color:var(--good)}
+.fit h3.no{color:var(--muted)}
+.fit ul{list-style:none;margin:0;padding:0;display:flex;flex-direction:column;gap:10px}
+.fit li{display:flex;gap:10px;align-items:flex-start;font-size:15px;line-height:1.4}
+.fit li svg{flex:none;margin-top:1px}
+.fit .yes-list svg{color:var(--good)}
+.fit .no-list{color:var(--body)}
+.fit .no-list svg{color:#8A8A9B}
+.fit hr{border:0;height:1px;background:var(--line-soft);margin:0}
+.refund{margin-top:32px;display:flex;gap:14px;align-items:flex-start;background:var(--accent-soft);border-radius:16px;padding:18px 16px}
+.refund svg{flex:none;color:var(--accent)}
+.refund b{display:block;font-size:16px;font-weight:800;margin-bottom:4px}
+.refund p{margin:0;font-size:14px;line-height:1.45;color:var(--body)}
+footer{margin-top:36px;text-align:center;font-size:12.5px;color:#6B6B7B}
+.sticky{position:fixed;left:0;right:0;bottom:0;z-index:10;background:#fff;border-top:1px solid var(--line);padding:12px 20px calc(12px + env(safe-area-inset-bottom));display:flex;justify-content:center}
+.sticky-in{width:100%;max-width:420px;display:flex;align-items:center;gap:14px}
+.price{line-height:1.15}
+.price b{display:block;font-size:22px;font-weight:800}
+.price span{font-size:12px;color:var(--muted)}
+.sticky .btn{flex:1;min-height:48px;font-size:16px;box-shadow:none}
+@media (min-width:768px){
+  .wrap{max-width:520px}
+  h1{font-size:40px}
+}
+@media (prefers-reduced-motion:reduce){.btn{transition:none}}
+</style>
+
+<!-- Meta Pixel and payment link: set PIXEL_ID and PAY_URL in PAGE_CONFIG below. -->
+<script>
+window.PAGE_CONFIG = {
+  PIXEL_ID: 'YOUR_PIXEL_ID',
+  PAY_URL: 'https://rzp.io/l/YOUR_RAZORPAY_LINK'
+};
+(function(){
+  var id = window.PAGE_CONFIG.PIXEL_ID;
+  if (!id || id === 'YOUR_PIXEL_ID') return;
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src='https://connect.facebook.net/en_US/fbevents.js';s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window,document,'script');
+  fbq('init', id);
+  fbq('track', 'PageView');
+})();
+</script>
+</head>
+<body>
+
+<div class="wrap">
+
+  <div class="brand">AdComp<span> Digital Studio</span></div>
+
+  <header class="hero">
+    <div class="eyebrow">D2C BRANDS · ₹3L+/MONTH AD SPEND</div>
+    <h1>Why did growth stop — and what's it costing you?</h1>
+    <p class="sub">Most founders never get a straight answer. They just <strong>guess and hope.</strong></p>
+  </header>
+
+  <!-- VIDEO SLOT: replace everything inside .video with your VSL embed, for example:
+       <iframe src="YOUR_VIDEO_EMBED_URL" allow="autoplay; fullscreen; picture-in-picture" allowfullscreen title="Growth clarity video"></iframe> -->
+  <div class="video" id="video">
+    <div class="slide-title">How it should look</div>
+    <div class="rows" aria-hidden="true">
+      <div class="row head"><i></i><i></i><i></i><i></i></div>
+      <div class="row"><i></i><i></i><i></i><i></i></div>
+      <div class="row"><i></i><i></i><i></i><i></i></div>
+      <div class="row"><i></i><i></i><i></i><i></i></div>
+    </div>
+    <div class="play" aria-hidden="true"><svg width="28" height="28" viewBox="0 0 24 24"><polygon points="8,5 19,12 8,19" fill="#fff"></polygon></svg></div>
+    <div class="chip">8 min · captions on</div>
+  </div>
+
+  <div class="cta-block">
+    <a class="btn" href="#" data-pay data-loc="hero">Book my ₹299 clarity session
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+    </a>
+    <div class="note">20-minute screen-share · you pick the slot after paying</div>
+  </div>
+
+  <section>
+    <h2>What you get in the session</h2>
+    <div class="card gets">
+      <div class="get">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><circle cx="11" cy="11" r="7"></circle><path d="M21 21l-4.3-4.3"></path></svg></div>
+        <div><b>Your ad account, reviewed live</b><p>A screen-share walk through your campaigns, structure and spend.</p></div>
+      </div>
+      <div class="get">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3s6 6.2 6 10.5A6 6 0 0 1 6 13.5C6 9.2 12 3 12 3z"></path></svg></div>
+        <div><b>The biggest leak, named</b><p>One straight answer on why growth stalled and what it costs you.</p></div>
+      </div>
+      <div class="get">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M9 6h11"></path><path d="M9 12h11"></path><path d="M9 18h11"></path><path d="M4 6h.01"></path><path d="M4 12h.01"></path><path d="M4 18h.01"></path></svg></div>
+        <div><b>A 30-day priority list</b><p>What to fix first, second and third. Yours to keep, whatever you decide next.</p></div>
+      </div>
+      <div class="get">
+        <div class="ico"><svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><rect x="4" y="5" width="16" height="14" rx="2"></rect><path d="M4 8l8 6 8-6"></path></svg></div>
+        <div><b>A written recap within 24 hours</b><p>A one-page summary, so nothing gets lost after the call.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>How it works</h2>
+    <div class="steps">
+      <div class="step"><div class="num">1</div><div><b>Pay ₹299 securely</b><p>A Razorpay payment page, takes a minute.</p></div></div>
+      <div class="step"><div class="num">2</div><div><b>Book a slot for your growth session</b><p>Pick a time that suits you. We go through your ad account on a 20-minute screen-share.</p></div></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Is this for you?</h2>
+    <div class="card fit">
+      <div>
+        <h3 class="yes">GOOD FIT</h3>
+        <ul class="yes-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>D2C store on Shopify or WooCommerce</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Spending ₹3L+ a month on ads</li>
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12.5l4.5 4.5L19 7.5"></path></svg>Sales are flat, or cost per sale keeps rising</li>
+        </ul>
+      </div>
+      <hr>
+      <div>
+        <h3 class="no">PROBABLY NOT</h3>
+        <ul class="no-list">
+          <li><svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.6" stroke-linecap="round" aria-hidden="true"><path d="M6 12h12"></path></svg>You are not running ads yet</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <div class="refund">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M12 3l8 3v6c0 4.5-3.2 8-8 9-4.8-1-8-4.5-8-9V6l8-3z"></path><path d="M9 12l2 2 4-4"></path></svg>
+    <div><b>Not useful? Get your ₹299 back.</b><p>If the session isn't worth ₹299 to you, tell me and I'll refund it.</p></div>
+  </div>
+
+  <div class="cta-block last">
+    <a class="btn" href="#" data-pay data-loc="bottom">Book my ₹299 clarity session
+      <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="M5 12h14"></path><path d="M13 6l6 6-6 6"></path></svg>
+    </a>
+    <div class="note">Secure payment via Razorpay</div>
+  </div>
+
+  <footer>© 2026 AdComp Digital Studio</footer>
+
+</div>
+
+<div class="sticky">
+  <div class="sticky-in">
+    <div class="price"><b>₹299</b><span>20-min clarity session</span></div>
+    <a class="btn" href="#" data-pay data-loc="sticky">Book now</a>
+  </div>
+</div>
+
+<script>
+(function(){
+  var cfg = window.PAGE_CONFIG || {};
+  var links = document.querySelectorAll('[data-pay]');
+  for (var i = 0; i < links.length; i++) links[i].setAttribute('href', cfg.PAY_URL);
+
+  document.addEventListener('click', function(e){
+    var a = e.target.closest ? e.target.closest('[data-pay]') : null;
+    if (!a) return;
+    var url = a.getAttribute('href');
+    var plain = !(e.metaKey || e.ctrlKey || e.shiftKey || e.altKey || e.button);
+
+    if (typeof window.fbq !== 'function') return;
+
+    try {
+      var eventID = 'bgs_' + Date.now() + '_' + Math.random().toString(36).slice(2, 8);
+      window.fbq('trackCustom', 'book_growth_session', {
+        button_location: a.getAttribute('data-loc'),
+        offer: 'growth_clarity',
+        value: 299,
+        currency: 'INR'
+      }, { eventID: eventID });
+    } catch (err) { return; }
+
+    // Give the pixel a moment to send before leaving for Razorpay.
+    if (plain && url && url !== '#') {
+      e.preventDefault();
+      setTimeout(function(){ window.location.href = url; }, 200);
+    }
+  });
+})();
+</script>
+</body>
+</html>
